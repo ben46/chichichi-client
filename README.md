@@ -9,3 +9,23 @@ users (signing up using weibo simple registrations)
   $ npm install
   $ npm start
 ```
+**User:**
+```sh
+  $ post to the wall
+  $ comment to a post
+  $ reply a comment
+  $ like a post
+  $ follow a person
+  $ update head image
+  $ update homepage image
+  $ update signiture
+  $ update name
+  $ --------  get  ---------
+  $ get follower list
+  $ get someone's info
+  $ get someone's wall
+  $ get hotest wall
+  $ get one post
+  $ --------  socket  ---------
+```
+
