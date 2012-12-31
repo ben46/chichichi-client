@@ -1,0 +1,14 @@
+{
+    "name": "chichichi-client"
+  , "description": "A demo app in nodejs illustrating use of express and mogoose"
+  , "version": "0.0.1"
+  , "private": false
+  , "author": "Ben Charlie <ben02060846@gmail.com> (http://ben46.github.com)"
+  , "engines": {
+        "node": "0.6.18"
+      , "npm": "1.1.9"
+    }
+  , "dependencies": {
+      "express": "latest"
+  }
+}
