@@ -1,22 +1,26 @@
+
+
 var http = require('http');
 var querystring = require('querystring');
 var request = require('request');
 var accessToken = '';
 
-var jsonData = 
-{
-    post:"haha  my post" , 
-    user: {
-        name:"ben02060846@gmail.com",
-        accessToken: accessToken
-
-    }
+var jsonData = { 
+   username:"ben02060846@gmail.com"
+  , password:"youtriate"
+  , _user : {
+    username:"ben02060846@gmail.com"
+    , password:"youtriate"
+  }
+  , body: 'lol i am body'
+  
 };
+
 var postdata = JSON.stringify(jsonData);
 var options = {
   hostname: 'localhost',
   port: 3000,
-  path: '/post',
+  path: '/articles/50d68f39f9912024e8000009/comments',
   method: 'POST' , 
   headers : {
     'Content-Type': 'application/json' , 
@@ -32,6 +36,7 @@ var req = http.request(options, function(res) {
   res.on('data', function (chunk) {
     console.log('BODY: ' + chunk);
   });
+
 });
 req.on('error', function(e) {
   console.log('problem with request: ' + e.message);
